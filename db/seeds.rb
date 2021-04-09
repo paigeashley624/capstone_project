@@ -8,8 +8,11 @@
 
 # Books:
 
-books = Book.create ([{ title: "The Alchemist", author_name: "Paulo Coelho", genre: "fiction", img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466865542i/18144590._UY2404_SS2404_.jpg" }])
-books = Book.create ([{ title: "The Fire Next Time", author_name: "James Baldwin", genre: "Essay", img_url: "http://prodimage.images-bn.com/pimages/9780679744726_p0_v3_s1200x630.jpg" }])
-books = Book.create ([{ title: "The Name of The Wind", author_name: "Patrick Ruthfuss", genre: "Fiction", img_url: "https://images-na.ssl-images-amazon.com/images/I/91b8oNwaV1L.jpg" }])
-books = Book.create ([{ title: "The Wise Mans Fear ", author_name: "Paulo Coelho", genre: "fiction", img_url: "https://images-na.ssl-images-amazon.com/images/I/81NX-69L22L.jpg" }])
-books = Book.create ([{ title: "The Water Dancer ", author_name: "Ta-Nehisi Coates", genre: "fiction", img_url: "https://images-na.ssl-images-amazon.com/images/I/91mho0umzyL.jpg" }])
+# books = Book.create ([{ title: "The Alchemist", author_name: "Paulo Coelho", genre: "fiction", img_url: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466865542i/18144590._UY2404_SS2404_.jpg" }])
+# books = Book.create ([{ title: "The Fire Next Time", author_name: "James Baldwin", genre: "Essay", img_url: "http://prodimage.images-bn.com/pimages/9780679744726_p0_v3_s1200x630.jpg" }])
+# books = Book.create ([{ title: "The Name of The Wind", author_name: "Patrick Ruthfuss", genre: "Fiction", img_url: "https://images-na.ssl-images-amazon.com/images/I/91b8oNwaV1L.jpg" }])
+# books = Book.create ([{ title: "The Wise Mans Fear ", author_name: "Paulo Coelho", genre: "fiction", img_url: "https://images-na.ssl-images-amazon.com/images/I/81NX-69L22L.jpg" }])
+# books = Book.create ([{ title: "The Water Dancer ", author_name: "Ta-Nehisi Coates", genre: "fiction", img_url: "https://images-na.ssl-images-amazon.com/images/I/91mho0umzyL.jpg" }])
+# books = Book.create ([{ title: "The Hill We Climb ", author_name: "Amanda Gorman", genre: "fiction", img_url: "https://storage.googleapis.com/du-prd/books/images/9780593465271.jpg" }])
+# books = Book.create ([{ title: "The Four Winds ", author_name: "James Patterson", genre: "fiction", img_url: "https://storage.googleapis.com/du-prd/books/images/9780316499408.jpg" }])
+# books = Book.create ([{ title: "The Midnight Library ", author_name: "Matt Haig", genre: "fiction", img_url: "https://storage.googleapis.com/du-prd/books/images/9780525559474.jpg" }])
