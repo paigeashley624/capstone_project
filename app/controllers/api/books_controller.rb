@@ -40,6 +40,9 @@ class Api::BooksController < ApplicationController
   end
 
   def destroy
+    id = params[:id]
+    @books = Book.find(id)
+    @books.destroy
+    render json: { message: "Book deleted from stash!" }
   end
 end
-hhh

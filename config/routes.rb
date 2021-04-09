@@ -19,5 +19,6 @@ Rails.application.routes.draw do
     delete "/books/:id", controller: "books", action: "destroy"
 
     # User_Books
+    post "/user_books", controller: "books", action: "create"
   end
 end
