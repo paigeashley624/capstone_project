@@ -1,7 +1,1 @@
-{
-  id: @books.id,
-  title: @books.title,
-  author_name: @books.author_name,
-  genre: @books.genre,
-  img_url: @books.img_url,
-}
+render partial: "book.json.jb", locals: { book: @book }

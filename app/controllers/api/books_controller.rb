@@ -6,43 +6,43 @@ class Api::BooksController < ApplicationController
 
   def show
     id = params[:id]
-    @books = Book.find(id)
+    @book = Book.find(id)
     render "show.json.jb"
   end
 
   def create
-    @books = Book.new(
+    @book = Book.new(
       title: params[:title],
       author_name: params[:author_name],
       genre: params[:genre],
       img_url: params[:img_url],
     )
-    if @books.save
+    if @book.save
       render "show.json.jb"
     else
-      render json: { errors: @books.error.full_messages }, status: 406
+      render json: { errors: @book.error.full_messages }, status: 406
     end
   end
 
   def update
     id = params[:id]
-    @books = Book.find(id)
-    @books.title = params[:title] || @books.title
-    @books.author_name = params[:author_name] || @books.author_name
-    @books.genre = params[:genre] || @books.genre
-    @books.img_url = params[:img_url] || @books.img_url
+    @book = Book.find(id)
+    @book.title = params[:title] || @book.title
+    @book.author_name = params[:author_name] || @book.author_name
+    @book.genre = params[:genre] || @book.genre
+    @book.img_url = params[:img_url] || @book.img_url
     # book title is not updating *****
-    if @books.save
+    if @book.save
       render "show.json.jb"
     else
-      render json: { errors: @books.error.full_messages }, status: 406
+      render json: { errors: @book.error.full_messages }, status: 406
     end
   end
 
   def destroy
     id = params[:id]
-    @books = Book.find(id)
-    @books.destroy
+    @book = Book.find(id)
+    @book.destroy
     render json: { message: "Book deleted from stash!" }
   end
 end

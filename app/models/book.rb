@@ -1,4 +1,4 @@
 class Book < ApplicationRecord
-  has_many :book_users
-  has_many :users, through: :book_users
+  has_many :user_books
+  has_many :users, through: :user_books
 end

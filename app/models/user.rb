@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  has_many :book_users
-  has_many :books, through: :book_users
+  has_many :user_books
+  has_many :books, through: :user_books
 
   has_secure_password
   validates :email, presence: true, uniqueness: true
