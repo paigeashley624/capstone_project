@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
     # Users
     post "/users", controller: "users", action: "create"
+    get "/users/:id", controller: "users", action: "show"
 
     # Sessions
     post "/sessions" => "sessions#create"

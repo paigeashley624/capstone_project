@@ -13,4 +13,11 @@ class Api::UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
+  #User Show Action:
+  def show
+    id = params[:id]
+    @user = User.find(id)
+    render "show.json.jb"
+  end
 end

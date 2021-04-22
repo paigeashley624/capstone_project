@@ -11,4 +11,11 @@ class Api::UserBooksController < ApplicationController
       render json: {errors: @user_books.error.full_messages}, status: 406
     end
   end
+
+  #is this needed???? will make a view if needed
+  def show
+    id = params[:id]
+    @user_books = UserBook.find(id)
+    render "show.json.jb"
+  end
 end
