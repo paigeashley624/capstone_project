@@ -15,11 +15,12 @@ Rails.application.routes.draw do
     # Books:
     get "/books", controller: "books", action: "index"
     get "/books/:id", controller: "books", action: "show"
-    post "/books", controller: "books", action: "create"
+    post "/books/", controller: "books", action: "create"
     patch "/books/:id", controller: "books", action: "update"
     delete "/books/:id", controller: "books", action: "destroy"
 
     # User_Books
     post "/user_books", controller: "user_books", action: "create"
+    delete "/user_books/id", controller: "user_books", action: "destroy"
   end
 end
