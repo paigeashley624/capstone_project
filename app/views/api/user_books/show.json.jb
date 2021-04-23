@@ -1,0 +1,6 @@
+{
+  id: @user_book.id,
+  user_id: @user_book.user_id,
+  book_id: @user_book.book_id,
+  status: @user_book.status,
+}

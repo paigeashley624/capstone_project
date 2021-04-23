@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   namespace :api do
 
     # Users
-    post "/users", controller: "users", action: "create"
     get "/users/:id", controller: "users", action: "show"
+    post "/users", controller: "users", action: "create"
 
     # Sessions
     post "/sessions" => "sessions#create"
@@ -20,7 +20,8 @@ Rails.application.routes.draw do
     delete "/books/:id", controller: "books", action: "destroy"
 
     # User_Books
+    get "/user_books/:id", controller: "user_books", action: "show"
     post "/user_books", controller: "user_books", action: "create"
-    delete "/user_books/id", controller: "user_books", action: "destroy"
+    delete "/user_books/id", controller: "user_books", action: "destroyrails"
   end
 end
