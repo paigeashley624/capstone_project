@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
     # User_Books
     get "/user_books/:id", controller: "user_books", action: "show"
-    post "/user_books", controller: "user_books", action: "create"
-    delete "/user_books/id", controller: "user_books", action: "destroyrails"
+    post "/user_books/", controller: "user_books", action: "create"
+    delete "/user_books/id", controller: "user_books", action: "destroy"
   end
 end
