@@ -16,6 +16,7 @@ class Api::BooksController < ApplicationController
       author_name: params[:author_name],
       genre: params[:genre],
       img_url: params[:img_url],
+      overview: params[:overview],
     )
     if @book.save
       render "show.json.jb"
@@ -31,6 +32,7 @@ class Api::BooksController < ApplicationController
     @book.author_name = params[:author_name] || @book.author_name
     @book.genre = params[:genre] || @book.genre
     @book.img_url = params[:img_url] || @book.img_url
+    @book.overview = params[:overview] || @book.overview
     # book title is not updating *****
     if @book.save
       render "show.json.jb"
