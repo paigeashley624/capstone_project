@@ -1,7 +1,5 @@
-{
-  id: @user.id,
-  name: @user.name,
-  email: @user.email,
-  books: @user.books,
-
-}
+u = render partial: "user.json.jb", locals: { user: @user }
+u[:user_books] = @user.user_books.map do |user_book|
+  render partial: "/api/user_books/user_books.json.jb", locals: { user_book: user_book }
+end
+u
