@@ -1,0 +1,2 @@
+# newest one - may or may not need this. Not a part of the user show situation 
+render partial: "user_books.json.jb", locals: { user_book: @user_book }

@@ -3,3 +3,4 @@ u[:user_books] = @user.user_books.map do |user_book|
   render partial: "/api/user_books/user_books.json.jb", locals: { user_book: user_book }
 end
 u
+# this maps through the books associated with a user and shows them
