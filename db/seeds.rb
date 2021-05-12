@@ -18,12 +18,3 @@ require "faker"
 # books = Book.create ([{ title: "The Hill We Climb ", author_name: "Amanda Gorman", genre: "Fiction", img_url: "https://prodimage.images-bn.com/pimages/9780593465271_p0_v4_s550x406.jpg", overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }])
 # books = Book.create ([{ title: "The Four Winds ", author_name: "Kristin Hannah", genre: "Fiction", img_url: "https://prodimage.images-bn.com/pimages/9781250178602_p0_v8_s550x406.jpg", overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }])
 # books = Book.create ([{ title: "The Midnight Library ", author_name: "Matt Haig", genre: "Fiction", img_url: "https://prodimage.images-bn.com/pimages/9780525559474_p0_v6_s550x406.jpg", overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }])
-# 40.times do
-#   Book.create(
-#     title: Faker::Book.title,
-#     author_name: Faker::Book.author,
-#     genre: Faker::Book.genre,
-#     img_url: Faker::LoremFlickr.image,
-#     overview: Faker::Lorem.paragraph,
-#   )
-# end

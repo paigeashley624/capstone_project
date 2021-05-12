@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     # Users
     get "/users/:id", controller: "users", action: "show"
     post "/users", controller: "users", action: "create"
+    delete "/users/:id", controller: "users", action: "destroy"
 
     # Sessions
     post "/sessions" => "sessions#create"
@@ -22,6 +23,6 @@ Rails.application.routes.draw do
     # User_Books
     get "/user_books/:id", controller: "user_books", action: "show"
     post "/user_books/", controller: "user_books", action: "create"
-    delete "/user_books/id", controller: "user_books", action: "destroy"
+    delete "/user_books/:id", controller: "user_books", action: "destroy"
   end
 end
