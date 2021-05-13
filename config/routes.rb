@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     # Books:
-    get "/books", controller: "books", action: "index"
+    get "/", controller: "books", action: "index"
     get "/books/:id", controller: "books", action: "show"
     post "/books/", controller: "books", action: "create"
     patch "/books/:id", controller: "books", action: "update"
