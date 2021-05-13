@@ -14,7 +14,8 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     # Books:
-    get "/", controller: "books", action: "index"
+    get "/books", controller: "books", action: "index"
+    # changed above route from /books in hopes of getting heroku to run correctly
     get "/books/:id", controller: "books", action: "show"
     post "/books/", controller: "books", action: "create"
     patch "/books/:id", controller: "books", action: "update"
