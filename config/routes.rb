@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   # get "/photos" => "photos#index"
 
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
-  root "api/books#index"
+  root "api/books#index" 
+  # added in order for the main heroku page to show the index 
+  
   namespace :api do
     
     # Users
