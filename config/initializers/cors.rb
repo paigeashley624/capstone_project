@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "localhost:8080", "example.com"
+    origins "lbook-stash.netlify.app", "example.com"
     # update to front-end netlify link when setup
     resource "*",
       headers: :any,
