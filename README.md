@@ -1,24 +1,24 @@
-# README
+# Bookstash API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Provides backend support for [Bookstash front-end](https://github.com/paigeashley624/capstone_project_vue) which recommends books to users based on their previous readings.
 
-Things you may want to cover:
+## System Requirements
 
-* Ruby version
+- ruby 3.0
+- Postgres Database
 
-* System dependencies
+## How to Install
 
-* Configuration
+After cloning the project
 
-* Database creation
+```bash
+$ bundle install
+$ bundle exec rack db:create
+$ bundle exec rack db:migrate
+```
 
-* Database initialization
+## Run the development server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+$ bundle rails server
+```
